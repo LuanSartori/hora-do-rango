@@ -1,0 +1,28 @@
+{
+  "name": "hora-do-rango",
+  "version": "1.0.0",
+  "description": "Site de receitas",
+  "main": "src/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.7",
+    "dotenv": "^16.4.7",
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
+    "morgan": "^1.10.0",
+    "mysql2": "^3.12.0",
+    "nodemon": "^3.1.9",
+    "passport": "^0.7.0",
+    "passport-jwt": "^4.0.1",
+    "sequelize": "^6.37.5",
+    "sqlite3": "^5.1.7"
+  },
+  "type": "module"
+}
