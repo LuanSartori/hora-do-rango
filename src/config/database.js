@@ -15,7 +15,8 @@ if (dev_status == 'OUT') {
             dialect: process.env.DB_DIALECT,
             port: process.env.DB_PORT,
             define: {
-                timestamps: false
+                timestamps: false,
+                underscored: true
             },
             logging: console.log
         }
@@ -28,7 +29,8 @@ if (dev_status == 'OUT') {
         dialect: process.env.DB_DEV_DIALECT || "sqlite",
         storage: process.env.DB_DEV_STORAGE || "../database.sqlite",
         define: {
-            timestamps: true
+            timestamps: false,
+            underscored: true
         },
         logging: console.log
     })
