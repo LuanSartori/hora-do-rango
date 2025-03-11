@@ -14,7 +14,17 @@ Usuarios.init(
     nome: { type: DataTypes.STRING(50), allowNull: false },
     login: { type: DataTypes.STRING(40), allowNull: false },
     senha: { type: DataTypes.STRING(80), allowNull: false },
-    status: { type: DataTypes.BOOLEAN, allowNull: false, defaultValue: true }
+    status: { type: DataTypes.BOOLEAN, allowNull: false, defaultValue: true },
+    cargo_id: {
+      type: DataTypes.TINYINT.UNSIGNED,
+      references: {
+        model: 'cargos',
+        key: 'id',
+      },
+      allowNull: false,
+      unique: false
+    },
+    img_perfil: { type: DataTypes.STRING(255), allowNull: false }
   },
   {
     sequelize,
